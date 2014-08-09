@@ -1,0 +1,124 @@
+# Auto detect text files and perform LF normalization
+# http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+* text=auto eol=input
+
+#
+# The above will handle all files NOT found below
+#
+
+# Documents
+*.doc     diff=astextplain
+*.DOC     diff=astextplain
+*.docx    diff=astextplain
+*.DOCX    diff=astextplain
+*.dot     diff=astextplain
+*.DOT     diff=astextplain
+*.pdf     diff=astextplain
+*.PDF     diff=astextplain
+*.rtf     diff=astextplain
+*.RTF     diff=astextplain
+
+# Graphics
+*.gif binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.svg text eol=native
+
+# CRLF files
+
+# Custom for Visual Studio
+*.sln text eol=crlf merge=union
+*.vcxproj text eol=crlf merge=union
+*.vcxproj.user text eol=crlf merge=union
+*.filters text eol=crlf merge=union
+*.vcproj text eol=crlf merge=union
+*.vcproj.user text eol=crlf merge=union
+*.csproj text eol=crlf merge=union
+*.vbproj text eol=crlf merge=union
+*.fsproj text eol=crlf merge=union
+*.dbproj text eol=crlf merge=union
+
+# Win32 Script files
+*.bat text eol=crlf 
+
+# These settings are for any web project
+# These files are text and should be normalized (Convert crlf => lf)
+.htaccess       text eol=lf
+*.df            text eol=native
+*.ini           text eol=native
+*.inc           text eol=native
+*.java          text eol=native
+*.json          text eol=native
+*.jsp           text eol=native
+*.jspf          text eol=native
+*.php           text eol=native
+*.properties    text eol=native
+*.py            text eol=native
+*.sql           text eol=native
+*.tld           text eol=native
+*.txt           text eol=native
+
+# These files are binary and should be left untouched
+# (binary is a macro for -text -diff)
+
+# Media files
+*.fla binary
+*.flv binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.swf binary
+
+# Archive files
+*.cub  binary
+*.gz   binary
+*.zip  binary
+*.7z   binary
+*.ttf  binary
+
+# Program files
+*.class         binary
+*.ear           binary
+*.jar           binary
+*.pyc           binary
+*.pyd           binary
+*.so            binary
+*.war           binary
+
+# Win32 Binary Files
+*.lib           binary
+*.dll           binary
+*.exe           binary
+
+# XPCOM Binary Files
+*.xpt           binary
+
+# Source Code files
+# C Sharp
+*.cs text eol=native diff=csharp
+
+# C/C++
+*.c text eol=native
+*.cc text eol=native
+*.cpp text eol=native
+*.h text eol=native
+*.hh text eol=native
+*.idl text eol=native
+*.inc text eol=native
+
+# handle swf's and swc's as binaries #
+## stackoverflow.com/questions/1529178/git-flash-builder-workflow-how-do-i-set-it-up-so-git-works-smoothly
+
+*.fla -crlf -diff -merge
+*.swc -crlf -diff -merge
+*.swf -crlf -diff -merge
+
+# Document binary files
+*.chm binary
+*.eml binary
+
+*.ja binary
+*.xpi binary
+*.whl binary
