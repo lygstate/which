@@ -1,0 +1,4 @@
+*.pyc
+*.exe
+build
+*.whl
