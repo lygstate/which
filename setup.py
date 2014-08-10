@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-# Copyright (c) 2002-2005 ActiveState Corp.
-# Author: Trent Mick (TrentM@ActiveState.com)
+# See LICENSE.txt for license details.
+# Author: Yonggang Luo(luoyonggang@gmail.com)
+#         Trent Mick(TrentM@ActiveState.com)
 
 """Distutils setup script for 'which'."""
 
@@ -185,6 +186,7 @@ class BuildExecutable(build):
         env['LIB'] = ';'.join(compiler[7])
         p = subprocess.Popen(cmds, env=env, shell=False)
         p.wait()
+        os.remove(os.path.join(outPath, 'launcher.obj'))
         build.run(self)
 
     def get_outputs(self):

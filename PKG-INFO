@@ -1,10 +1,10 @@
 Metadata-Version: 1.0
 Name: which
-Version: 1.1.0
+Version: 2.0.0
 Summary: a portable GNU which replacement
-Home-page: http://trentm.com/projects/which/
-Author: Trent Mick
-Author-email: TrentM@ActiveState.com
+Home-page: http://github.com/lygstate/which/
+Author: Yonggang Luo
+Author-email: luoyonggang@gmail.com
 License: MIT License
 Description: This is a GNU which replacement with the following features:
         - it is portable (Windows, Linux);

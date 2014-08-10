@@ -1,10 +1,8 @@
 #!/usr/bin/env python
-# Copyright (c) 2002-2005 ActiveState Corp.
 # See LICENSE.txt for license details.
 # Author:
-#   Trent Mick (TrentM@ActiveState.com)
-# Home:
-#   http://trentm.com/projects/which/
+#   Yonggang Luo(luoyonggang@gmail.com)
+#   Trent Mick(TrentM@ActiveState.com)
 
 r"""Find the full path to commands.
 
@@ -65,8 +63,8 @@ _cmdlnUsage = """
     files without executable access.
 """
 
-__revision__ = "$Id: which.py 430 2005-08-20 03:11:58Z trentm $"
-__version_info__ = (1, 1, 0)
+__revision__ = "$Id: which.py 430 2014-08-10 03:11:58Z lygstate $"
+__version_info__ = (2, 0, 0)
 __version__ = '.'.join(map(str, __version_info__))
 
 import os

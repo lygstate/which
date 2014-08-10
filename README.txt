@@ -2,29 +2,25 @@ which.py -- a portable GNU which replacement
 ============================================
 
 Download the latest which.py packages from here:
-    (source) http://trentm.com/downloads/which/1.1.0/which-1.1.0.zip
+    (source) https://github.com/lygstate/which/releases
 
-
-Home            : http://trentm.com/projects/which/
+Home            : http://github.com/lygstate/which/
 License         : MIT (see LICENSE.txt)
 Platforms       : Windows, Linux, Mac OS X, Unix
 Current Version : 1.1
 Dev Status      : mature, has been heavily used in a commercial product for
                   over 2 years
-Requirements    : Python >= 2.3 (http://www.activestate.com/ActivePython/)
+Requirements    : Python >= 2.3 (http://python.org/)
 
 
 What's new?
 -----------
 
-I have moved hosting of `which.py` from my old [Starship
-pages](http://starship.python.net/~tmick/) to this site. These starter
-docs have been improved a little bit. See the [Change Log](#changelog)
-below for more.
+I have moved which.py to github for easily collaboration.
 
 **WARNING**: If you are upgrading your `which.py` and you also use my
 [process.py](../process/) module, you must upgrade `process.py` as well
-because of the `_version_/__version__` change in v1.1.0.
+because of the `_version_/__version__` change in v2.0.0.
 
 
 Why which.py?
@@ -55,8 +51,8 @@ Install Notes
 Download the latest `which.py` source package, unzip it, and run
 `python setup.py install`:
 
-    unzip which-1.1.0.zip
-    cd which-1.1.0
+    unzip which-2.0.0.zip
+    cd which-2.0.0
     python setup.py install
 
 If your install fails then please visit [the Troubleshooting
@@ -181,6 +177,9 @@ Run `which --help` to see command-line usage:
 
 Change Log
 ----------
+### v2.0.0
+- Change the building of which.exe in setup.py, so it can be build
+- automatically.
 
 ### v1.1.0
 - Change version attributes and semantics. Before: had a _version_
