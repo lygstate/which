@@ -203,7 +203,8 @@ def _getVersion():
 
 if sys.platform == "win32":
     scripts = []
-    binFiles = ["which.exe", "which.py"]
+    #binFiles = ["which.exe", "which.py"]
+    binFiles = []
 else:
     # Disable installing which as a script on non-Windows platforms.
     # Other system has already have a which
